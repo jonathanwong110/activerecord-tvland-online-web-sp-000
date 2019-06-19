@@ -10,7 +10,7 @@ class Actor < ActiveRecord::Base
   def list_roles
     actor = Actor.new(:first_name => "Emilia", :last_name => "Clarke")
     character = Character.new(:name => "Khaleesi")
-    character.actor = emilia
+    character.actor = actor
     got = Show.new(:name => "Game of Thrones")
     character.show = got
     character.save
