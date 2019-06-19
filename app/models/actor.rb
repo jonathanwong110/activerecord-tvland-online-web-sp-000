@@ -14,7 +14,7 @@ class Actor < ActiveRecord::Base
   end
   
   def list_roles
-    puts Actor.character
+    puts Actor.include?(Actor)
   end
 
 
