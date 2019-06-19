@@ -6,6 +6,7 @@ class CreateShows < ActiveRecord::Migration[4.2]
       t.string :genre
       t.string :call_letters
       t.string :day
+      t.string :season
     end
   end
 end
