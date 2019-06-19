@@ -14,10 +14,8 @@ class Actor < ActiveRecord::Base
   end
   
   def list_roles
+    puts Actor.character
   end
 
-  def shows_and_characters
-    "#{show}.#{characters}".all
-  end
 
 end
