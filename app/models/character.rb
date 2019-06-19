@@ -7,8 +7,9 @@ class Character < ActiveRecord::Base
   end
   
   def say_that_thing_you_say
-    character = Character.where("name = Urkel")
-    character.catchphrase
+    urkel = Character.new(:name => "Steve Urkel")
+    urkel.catchphrase = "Did I do that?"
+    urkel.save
   end
   
 end
