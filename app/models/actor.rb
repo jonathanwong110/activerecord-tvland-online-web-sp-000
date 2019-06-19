@@ -8,12 +8,12 @@ class Actor < ActiveRecord::Base
   
   
   def list_roles
-    emilia = Actor.new(:first_name => "Emilia", :last_name => "Clarke")
-    khaleesi = Character.new(:name => "Khaleesi")
-    khaleesi.actor = emilia
+    actor = Actor.new(:first_name => "Emilia", :last_name => "Clarke")
+    character = Character.new(:name => "Khaleesi")
+    character.actor = emilia
     got = Show.new(:name => "Game of Thrones")
-    khaleesi.show = got
-    khaleesi.save
+    character.show = got
+    character.save
     "#{character.name} - #{show.name}"
   end
 
