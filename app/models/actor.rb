@@ -8,6 +8,9 @@ class Actor < ActiveRecord::Base
   
   
   def list_roles
+      urkel = Character.new(:name => "Steve Urkel")
+    urkel.catchphrase = "Did I do that?"
+    urkel.save
     "#{character.name} - #{show.name}"
   end
 
