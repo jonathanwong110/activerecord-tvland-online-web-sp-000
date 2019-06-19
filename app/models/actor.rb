@@ -11,8 +11,8 @@ class Actor < ActiveRecord::Base
     actor = Actor.new(:first_name => "Emilia", :last_name => "Clarke")
     character = Character.new(:name => "Khaleesi")
     character.actor = actor
-    got = Show.new(:name => "Game of Thrones")
-    character.show = got
+    show = Show.new(:name => "Game of Thrones")
+    character.show = show
     character.save
     "#{character.name} - #{show.name}"
   end
