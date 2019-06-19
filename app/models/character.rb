@@ -8,7 +8,6 @@ class Character < ActiveRecord::Base
   
   def say_that_thing_you_say
     urkel = Character.new(:name => "Steve Urkel")
-    catchphrase = "Did I do that?"
     urkel 
     catchphrase
   end
