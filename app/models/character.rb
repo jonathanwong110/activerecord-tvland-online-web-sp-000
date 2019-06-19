@@ -5,6 +5,10 @@ class Character < ActiveRecord::Base
   def catchphrase
     "Did I do that?"
   end
-
+  
+  def say_that_thing_you_say
+    character = Character.where("name = Urkel")
+    character.catchphrase
+  end
   
 end
