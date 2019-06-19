@@ -3,7 +3,7 @@ class Character < ActiveRecord::Base
   belongs_to :actor
   
   def catchphrase
-    puts "Did I do that?"
+    "Did I do that?"
   end
   
   def say_that_thing_you_say
