@@ -14,7 +14,7 @@ class Actor < ActiveRecord::Base
     got = Show.new(:name => "Game of Thrones")
     khaleesi.show = got
     khaleesi.save
-    
+    "#{character.name} - #{show.name}"
   end
 
 
