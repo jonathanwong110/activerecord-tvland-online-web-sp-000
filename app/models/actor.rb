@@ -6,12 +6,6 @@ class Actor < ActiveRecord::Base
     "#{first_name} #{last_name}"
   end
   
-  def characters
-    actor = Actor.new(first_name: "Emilia", last_name: "Clarke")
-    character = Character.new(name: "Khaleesi")
-    character.actor = character
-    character.save
-  end
   
   def list_roles
     "#{character.name} - #{show.name}"
